@@ -49,3 +49,13 @@ def save_as_json(a_list):
     # Save to a file
     with open("output.json", "w", encoding="utf-8") as f:
         json.dump(a_list, f, indent=2, ensure_ascii=False)
+
+def load_json(filepath):
+    return json.load(filepath)
+
+def find_series_id(namez):
+    series = json.load(open("output.json"))
+    for index, show in enumerate(series):
+        if show['name'] == namez:
+            return index
+    return -1
