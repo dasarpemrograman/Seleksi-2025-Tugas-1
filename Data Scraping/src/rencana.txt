@@ -1,0 +1,4 @@
+1. Scrape https://tvtropes.org/pmwiki/pmwiki.php/Main/Series
+2. Find
+
+Each page has an article
